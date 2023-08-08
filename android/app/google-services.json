@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "473550532701",
+    "firebase_url": "https://docs-firebase-project-default-rtdb.firebaseio.com",
     "project_id": "docs-firebase-project",
     "storage_bucket": "docs-firebase-project.appspot.com"
   },

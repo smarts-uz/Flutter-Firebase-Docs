@@ -52,6 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '473550532701',
     projectId: 'docs-firebase-project',
     authDomain: 'docs-firebase-project.firebaseapp.com',
+    databaseURL: 'https://docs-firebase-project-default-rtdb.firebaseio.com',
     storageBucket: 'docs-firebase-project.appspot.com',
   );
 
@@ -60,6 +61,7 @@ class DefaultFirebaseOptions {
     appId: '1:473550532701:android:42b0c30ec03d07af839db4',
     messagingSenderId: '473550532701',
     projectId: 'docs-firebase-project',
+    databaseURL: 'https://docs-firebase-project-default-rtdb.firebaseio.com',
     storageBucket: 'docs-firebase-project.appspot.com',
   );
 
@@ -68,9 +70,9 @@ class DefaultFirebaseOptions {
     appId: '1:473550532701:ios:5424b2fd47c591da839db4',
     messagingSenderId: '473550532701',
     projectId: 'docs-firebase-project',
+    databaseURL: 'https://docs-firebase-project-default-rtdb.firebaseio.com',
     storageBucket: 'docs-firebase-project.appspot.com',
-    iosClientId:
-        '473550532701-slntctb25eh6ij59v2mvmvgujug97ap9.apps.googleusercontent.com',
+    iosClientId: '473550532701-slntctb25eh6ij59v2mvmvgujug97ap9.apps.googleusercontent.com',
     iosBundleId: 'com.example.gtkFlutter',
   );
 }

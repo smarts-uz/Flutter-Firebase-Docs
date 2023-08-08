@@ -17,7 +17,7 @@ class ApplicationState extends ChangeNotifier {
 
   bool _loggedIn = false;
   bool get loggedIn => _loggedIn;
-
+  //
   StreamSubscription<QuerySnapshot>? _guestBookSubscription;
   List<GuestBookMessage> _guestBookMessages = [];
   List<GuestBookMessage> get guestBookMessages => _guestBookMessages;
@@ -42,8 +42,8 @@ class ApplicationState extends ChangeNotifier {
           for (final document in snapshot.docs) {
             _guestBookMessages.add(
               GuestBookMessage(
-                name: document.data()['name'] as String,
-                message: document.data()['text'] as String,
+                name: document.data()['name'],
+                message: document.data()['text'],
               ),
             );
           }
@@ -58,6 +58,7 @@ class ApplicationState extends ChangeNotifier {
     });
   }
 
+  //
   Future<DocumentReference> addMessageToGuestBook(String message) {
     if (!_loggedIn) {
       throw Exception('Must be logged in');
@@ -73,3 +74,4 @@ class ApplicationState extends ChangeNotifier {
     });
   }
 }
+// app_state.dart is file.
