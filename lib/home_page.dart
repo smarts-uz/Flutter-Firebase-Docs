@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';
-import 'guest_book.dart'; // new
+import 'guest_book.dart';
 import 'src/authentication.dart';
 import 'src/widgets.dart';
 
@@ -41,7 +41,6 @@ class HomePage extends StatelessWidget {
           const Paragraph(
             'Join us for a day full of Firebase Workshops and Pizza!',
           ),
-          // Modify from here...
           Consumer<ApplicationState>(
             builder: (context, appState, _) => Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,12 +50,12 @@ class HomePage extends StatelessWidget {
                   GuestBook(
                     addMessage: (message) =>
                         appState.addMessageToGuestBook(message),
+                    messages: appState.guestBookMessages,
                   ),
                 ],
               ],
             ),
           ),
-          // ...to here.
         ],
       ),
     );
