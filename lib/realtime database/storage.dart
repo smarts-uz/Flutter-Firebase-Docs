@@ -14,6 +14,7 @@ class StoragePage extends StatefulWidget {
 
 class _StoragePageState extends State<StoragePage> {
   FirebaseStorage storage = FirebaseStorage.instance;
+
   Future<void> _upload(String inputSource) async {
     final picker = ImagePicker();
     XFile? pickedImage;
@@ -31,11 +32,10 @@ class _StoragePageState extends State<StoragePage> {
         await storage.ref(fileName).putFile(
             imageFile,
             SettableMetadata(customMetadata: {
-              'uploaded_by': 'image',
+              'uploaded_by': 'Image',
               'description': 'Some description...'
             }));
 
-        // Refresh the UI
         setState(() {});
       } on FirebaseException catch (error) {
         if (kDebugMode) {
@@ -70,8 +70,6 @@ class _StoragePageState extends State<StoragePage> {
     return files;
   }
 
-  // Delete the selected image
-  // This function is called when a trash icon is pressed
   Future<void> _delete(String ref) async {
     await storage.ref(ref).delete();
     // Rebuild the UI
