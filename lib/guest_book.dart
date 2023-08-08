@@ -13,7 +13,7 @@ class GuestBook extends StatefulWidget {
   });
 
   final FutureOr<void> Function(String message) addMessage;
-  final List<GuestBookMessage> messages; // new
+  final List<GuestBookMessage> messages;
 
   @override
   _GuestBookState createState() => _GuestBookState();

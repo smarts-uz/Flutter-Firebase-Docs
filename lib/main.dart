@@ -90,9 +90,7 @@ final _router = GoRouter(
     ),
   ],
 );
-// end of GoRouter configuration
 
-// Change MaterialApp to MaterialApp.router and add the routerConfig
 class App extends StatelessWidget {
   const App({super.key});
 
@@ -112,7 +110,7 @@ class App extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         useMaterial3: true,
       ),
-      routerConfig: _router, // new
+      routerConfig: _router,
     );
   }
 }
