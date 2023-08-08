@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => DowloadImageScreen(),
+                    builder: (context) => StoragePage(),
                   ),
                 );
               },
