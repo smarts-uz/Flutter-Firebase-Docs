@@ -72,7 +72,8 @@ class DefaultFirebaseOptions {
     projectId: 'docs-firebase-project',
     databaseURL: 'https://docs-firebase-project-default-rtdb.firebaseio.com',
     storageBucket: 'docs-firebase-project.appspot.com',
-    iosClientId: '473550532701-slntctb25eh6ij59v2mvmvgujug97ap9.apps.googleusercontent.com',
+    iosClientId:
+        '473550532701-slntctb25eh6ij59v2mvmvgujug97ap9.apps.googleusercontent.com',
     iosBundleId: 'com.example.gtkFlutter',
   );
 }

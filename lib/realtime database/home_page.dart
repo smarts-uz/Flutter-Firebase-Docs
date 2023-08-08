@@ -1,12 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart'
     hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:flutter/material.dart';
+import 'package:gtk_flutter/realtime%20database/storage.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';
 import 'guest_book.dart';
-import 'src/authentication.dart';
-import 'src/widgets.dart';
+import '../src/authentication.dart';
+import '../src/widgets.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,6 +17,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Firebase Meetup'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DowloadImageScreen(),
+                  ),
+                );
+              },
+              icon: Icon(Icons.photo))
+        ],
       ),
       body: ListView(
         children: <Widget>[

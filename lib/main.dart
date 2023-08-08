@@ -4,8 +4,8 @@ import 'package:go_router/go_router.dart'; // new
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart'; // new
 
-import 'app_state.dart'; // new
-import 'home_page.dart';
+import 'realtime database/app_state.dart'; // new
+import 'realtime database/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
