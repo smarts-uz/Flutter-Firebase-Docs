@@ -34,5 +34,8 @@
         "firebase-debug.*.log"
       ]
     }
-  ]
+  ],
+  "extensions": {
+    "firestore-bigquery-export": "firebase/firestore-bigquery-export@0.1.34"
+  }
 }
