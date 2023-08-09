@@ -41,6 +41,10 @@ class HomePage extends StatelessWidget {
             },
             icon: Icon(Icons.language),
           ),
+          TextButton(
+            onPressed: () => throw Exception(),
+            child: const Text('LOG'),
+          ),
         ],
       ),
       body: ListView(
