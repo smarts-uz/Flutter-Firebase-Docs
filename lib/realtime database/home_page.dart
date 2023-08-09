@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart'
     hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:flutter/material.dart';
 import 'package:gtk_flutter/realtime%20database/storage.dart';
+import 'package:gtk_flutter/translator/pages/dashboard.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';
@@ -19,15 +20,27 @@ class HomePage extends StatelessWidget {
         title: const Text('Firebase Meetup'),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => StoragePage(),
-                  ),
-                );
-              },
-              icon: Icon(Icons.photo))
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => StoragePage(),
+                ),
+              );
+            },
+            icon: Icon(Icons.photo),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Dashboard(),
+                ),
+              );
+            },
+            icon: Icon(Icons.language),
+          ),
         ],
       ),
       body: ListView(
