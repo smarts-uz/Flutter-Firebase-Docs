@@ -8,6 +8,42 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:473550532701:android:f6c465d3b8d0ea01839db4",
+        "android_client_info": {
+          "package_name": "com.example.app_check_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473550532701-29qvne7iffr9c46q1fal1fbgqn0c6icp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBenYq-zYN_kfw341LTKXgGVNpjIKnIFns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473550532701-29qvne7iffr9c46q1fal1fbgqn0c6icp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473550532701-024lh5ho5uhu4upba1n2vpe2f3h429m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appCheckProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:473550532701:android:6488153555b6f6c5839db4",
         "android_client_info": {
           "package_name": "com.example.firebase_docs"
@@ -32,10 +68,10 @@
               "client_type": 3
             },
             {
-              "client_id": "473550532701-145t02utcpoil5du1l9vbj55opmsos19.apps.googleusercontent.com",
+              "client_id": "473550532701-024lh5ho5uhu4upba1n2vpe2f3h429m5.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.blo"
+                "bundle_id": "com.example.appCheckProject"
               }
             }
           ]
@@ -68,10 +104,10 @@
               "client_type": 3
             },
             {
-              "client_id": "473550532701-145t02utcpoil5du1l9vbj55opmsos19.apps.googleusercontent.com",
+              "client_id": "473550532701-024lh5ho5uhu4upba1n2vpe2f3h429m5.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.blo"
+                "bundle_id": "com.example.appCheckProject"
               }
             }
           ]
