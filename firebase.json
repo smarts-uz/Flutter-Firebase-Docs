@@ -37,5 +37,22 @@
   ],
   "extensions": {
     "firestore-bigquery-export": "firebase/firestore-bigquery-export@0.1.34"
+  },
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true,
+      "port": 5000
+    },
+    "singleProjectMode": true
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.jons"
   }
 }
