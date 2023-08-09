@@ -11,9 +11,9 @@ import 'realtime database/app_state.dart';
 import 'realtime database/home_page.dart';
 
 Future<void> main() async {
+  Crashlytics.instance.enableInDevMode = true;
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
   FlutterError.onError = (errorDetails) {
     FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
   };
@@ -26,6 +26,10 @@ Future<void> main() async {
     create: (context) => ApplicationState(),
     builder: ((context, child) => const App()),
   ));
+}
+
+class Crashlytics {
+  static var instance;
 }
 
 final _router = GoRouter(
